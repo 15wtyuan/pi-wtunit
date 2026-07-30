@@ -1,0 +1,44 @@
+{
+  "name": "pi-wtunit",
+  "version": "0.1.0",
+  "description": "Personal Pi meta-package — bundles all my extensions, themes, and configs",
+  "type": "module",
+  "license": "MIT",
+  "author": "yuanwentao",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/15wtyuan/pi-wtunit.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-theme",
+    "meta-package"
+  ],
+  "dependencies": {
+    "superpowers": "git+https://github.com/obra/superpowers.git",
+    "pi-subagents": "git+https://github.com/15wtyuan/pi-subagents.git#session-view",
+    "pi-toolbox": "git+https://github.com/15wtyuan/pi-toolbox.git",
+    "pi-encoding-fs": "git+https://github.com/15wtyuan/pi-encoding-fs.git",
+    "pi-todo": "git+https://github.com/15wtyuan/pi-todo.git",
+    "pi-zentui": "git+https://github.com/lmilojevicc/pi-zentui.git"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions",
+      "node_modules/superpowers/.pi/extensions/superpowers.ts",
+      "node_modules/pi-subagents/src/index.ts",
+      "node_modules/pi-toolbox/src/index.ts",
+      "node_modules/pi-encoding-fs/src/index.ts",
+      "node_modules/pi-todo/index.ts",
+      "node_modules/pi-zentui/extensions"
+    ],
+    "skills": [
+      "./skills",
+      "node_modules/superpowers/skills"
+    ],
+    "themes": [
+      "./themes"
+    ]
+  }
+}

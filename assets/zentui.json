@@ -1,0 +1,50 @@
+{
+  "colorSources": {
+    "starship": "theme",
+    "editor": "theme",
+    "userMessages": "theme"
+  },
+  "separator": "pipe",
+  "extensionStatuses": {
+    "defaultPlacement": "right",
+    "colorModes": {
+      "usage": "original"
+    },
+    "placements": {
+      "usage": "right"
+    }
+  },
+  "colors": {
+    "cwd": "bold #89b4fa",
+    "sessionName": "bold #94e2d5",
+    "gitBranch": "bold #cba6f7",
+    "gitStatus": "bold #f38ba8",
+    "contextNormal": "#6c7086",
+    "contextWarning": "bold #f9e2af",
+    "contextError": "bold #f38ba8",
+    "tokens": "#6c7086",
+    "cost": "bold #a6e3a1",
+    "separator": "#585b70",
+    "runtimePrefix": "",
+    "extensionStatus": "#6c7086",
+    "sessionDuration": "#f9e2af",
+    "packageVersion": "#fab387",
+    "gitCommit": "bold #a6e3a1",
+    "gitMetricsAdded": "bold #a6e3a1",
+    "gitMetricsDeleted": "bold #f38ba8",
+    "username": "bold #f9e2af",
+    "time": "bold #f9e2af",
+    "os": "bold #cdd6f4",
+    "editorAccent": "#89b4fa",
+    "editorPrompt": "#89b4fa",
+    "editorBorder": "#45475a",
+    "editorModel": "#89b4fa",
+    "editorProvider": "#cdd6f4",
+    "editorThinking": "#6c7086",
+    "editorThinkingMinimal": "#6c7086",
+    "editorThinkingLow": "#a6e3a1",
+    "editorThinkingMedium": "#f9e2af",
+    "editorThinkingHigh": "#fab387",
+    "editorThinkingXhigh": "#f38ba8"
+  }
+}
