@@ -15,6 +15,19 @@
     "pi-theme",
     "meta-package"
   ],
+  "scripts": {
+    "postinstall": "node scripts/patch-pi.mjs",
+    "patch-pi": "node scripts/patch-pi.mjs"
+  },
+  "files": [
+    "assets",
+    "docs",
+    "extensions",
+    "patches",
+    "scripts",
+    "skills",
+    "themes"
+  ],
   "dependencies": {
     "superpowers": "git+https://github.com/obra/superpowers.git",
     "pi-subagents": "git+https://github.com/15wtyuan/pi-subagents.git#session-view",
