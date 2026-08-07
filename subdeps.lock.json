@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-08-07T07:39:53.015Z",
+  "packages": {
+    "superpowers": {
+      "spec": "git+https://github.com/obra/superpowers.git",
+      "url": "https://github.com/obra/superpowers.git",
+      "ref": "HEAD",
+      "resolved": "44c9b2d6e889982ac18c27d05a19fefe335194e1"
+    },
+    "pi-subagents": {
+      "spec": "git+https://github.com/15wtyuan/pi-subagents.git#session-view",
+      "url": "https://github.com/15wtyuan/pi-subagents.git",
+      "ref": "session-view",
+      "resolved": "511f1d6a6fac1c45c73137f87c331608b55eae8b"
+    },
+    "pi-toolbox": {
+      "spec": "git+https://github.com/15wtyuan/pi-toolbox.git",
+      "url": "https://github.com/15wtyuan/pi-toolbox.git",
+      "ref": "HEAD",
+      "resolved": "2438b015061a8be8964e8c17260399f09e2fead4"
+    },
+    "pi-encoding-fs": {
+      "spec": "git+https://github.com/15wtyuan/pi-encoding-fs.git",
+      "url": "https://github.com/15wtyuan/pi-encoding-fs.git",
+      "ref": "HEAD",
+      "resolved": "69e4e473c67364057eeb73e327415206858b74bf"
+    },
+    "pi-todo": {
+      "spec": "git+https://github.com/15wtyuan/pi-todo.git",
+      "url": "https://github.com/15wtyuan/pi-todo.git",
+      "ref": "HEAD",
+      "resolved": "68288f9b73306fe19d645fe49c4b9afc977fb506"
+    },
+    "pi-zentui": {
+      "spec": "git+https://github.com/lmilojevicc/pi-zentui.git",
+      "url": "https://github.com/lmilojevicc/pi-zentui.git",
+      "ref": "HEAD",
+      "resolved": "a8a914d79727e59cdc1ac3717c179beee4890f52"
+    }
+  }
+}

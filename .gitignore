@@ -1,2 +1,4 @@
 node_modules/
 .tmp/
+# Nested installs must not pin floating git deps; subdeps.lock.json tracks tips instead.
+package-lock.json

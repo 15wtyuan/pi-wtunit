@@ -17,7 +17,9 @@
   ],
   "scripts": {
     "postinstall": "node scripts/patch-pi.mjs",
-    "patch-pi": "node scripts/patch-pi.mjs"
+    "patch-pi": "node scripts/patch-pi.mjs",
+    "sync-subdeps": "node scripts/sync-subdeps.mjs",
+    "sync-subdeps:check": "node scripts/sync-subdeps.mjs --check"
   },
   "files": [
     "assets",

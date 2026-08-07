@@ -1,0 +1,59 @@
+name: sync-subdeps
+
+# Keep nested git dependency tips fresh.
+# A new commit on master lets `pi update --extensions` re-install node_modules
+# and pick up child package updates (pi update does not recurse into them).
+
+on:
+  schedule:
+    # Every 6 hours
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - "package.json"
+      - "scripts/sync-subdeps.mjs"
+      - ".github/workflows/sync-subdeps.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-subdeps
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Need full history only for push; tip is enough.
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Resolve subdeps
+        id: sync
+        run: node scripts/sync-subdeps.mjs >> "$GITHUB_OUTPUT"
+
+      - name: Commit & push
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add subdeps.lock.json
+          # summary may contain arrows / commas — keep commit subject short
+          subject="chore(subdeps): ${{ steps.sync.outputs.summary }}"
+          # Git subject soft-limit ~72; truncate gracefully
+          if [ "${#subject}" -gt 90 ]; then
+            subject="${subject:0:87}..."
+          fi
+          git commit -m "$subject"
+          git push
