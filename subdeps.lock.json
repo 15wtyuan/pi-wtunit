@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T01:29:44.360Z",
+  "generatedAt": "2026-09-02T15:23:41.141Z",
   "packages": {
     "superpowers": {
       "spec": "git+https://github.com/obra/superpowers.git",
@@ -35,7 +35,7 @@
       "spec": "git+https://github.com/lmilojevicc/pi-zentui.git",
       "url": "https://github.com/lmilojevicc/pi-zentui.git",
       "ref": "HEAD",
-      "resolved": "6646093878b1e0c65e6581a20be120fe471a0857"
+      "resolved": "32f0668015f7685a3d3acb7cecb06680ae0a83fc"
     }
   }
 }
