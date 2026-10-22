@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-20T20:55:45.699Z",
+  "generatedAt": "2026-10-22T01:59:52.588Z",
   "packages": {
     "superpowers": {
       "spec": "git+https://github.com/obra/superpowers.git",
       "url": "https://github.com/obra/superpowers.git",
       "ref": "HEAD",
-      "resolved": "b739a8af570e10a95898f2bdf6cec97467fa6c12"
+      "resolved": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b"
     },
     "pi-subagents": {
       "spec": "git+https://github.com/15wtyuan/pi-subagents.git#session-view",
