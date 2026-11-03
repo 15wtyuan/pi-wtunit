@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-03T13:03:15.063Z",
+  "generatedAt": "2026-11-03T22:36:21.304Z",
   "packages": {
     "superpowers": {
       "spec": "git+https://github.com/obra/superpowers.git",
       "url": "https://github.com/obra/superpowers.git",
       "ref": "HEAD",
-      "resolved": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b"
+      "resolved": "22f0b463e7a5e579904dd6211a520321035526f7"
     },
     "pi-subagents": {
       "spec": "git+https://github.com/15wtyuan/pi-subagents.git#session-view",
@@ -35,7 +35,7 @@
       "spec": "git+https://github.com/lmilojevicc/pi-zentui.git",
       "url": "https://github.com/lmilojevicc/pi-zentui.git",
       "ref": "HEAD",
-      "resolved": "8aa0b73791689d3b3eef4e833c545a4f26792ae7"
+      "resolved": "ce73289ad0f8c4285328245acb034ba8476cedbf"
     }
   }
 }
